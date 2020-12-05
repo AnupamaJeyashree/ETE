@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ETE Signup & login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header class="fix">
+    <div class="nav-area">
+      <div class="logo" id="home"><img src="ETE.png"></div>
+      <ul class="menu">
+      <li><h1><b><a href="http://localhost/ete/main%20page/new.html">Home</a></b><h1></li>
+      </ul>
+    </div>
+  </header>
+<div class="cont">
+<form action="signup.php" method="post">
+    <div class="form sign-in">
+      <h2>Sign Up</h2>
+        <label>
+          
+          <input type="text" name="Name" placeholder="Name" required autofocus>
+        </label>
+        <label>
+          <br>
+          <input type="tel" name="phoneno"  pattern="[0-9]{10}"  title="Ten digits Number" placeholder="Mobile Number" required/>
+        </label>
+        <label>
+          <br>
+          <input type="password" name="password" placeholder="Password" required>
+        </label>
+        <label>
+          <br>
+          <input type="password" name="cpassword" placeholder="Confirm Password" required>
+        </label><br/><br/>
+        <input type="submit" name="signup" class="submit" value="Sign Up Now"><br/>
+</form>
+</div>
+<form action="login.php" method="post">
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h2>One of us?</h2>
+          <p>If you already has an account, just sign in. We've missed you!</p>
+        </div>
+        <div class="img-text m-in">
+          <h2>New here?</h2>
+          <p>Sign up and discover great amount of new opportunities!</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-up">Log In</span>
+          <span class="m-in">Sign up</span>
+        </div>
+      </div>
+ <div class="form sign-up">
+        <h2>Log In</h2>
+    <label>
+          <br><br>
+          <input type="text" name="Name" placeholder="Name" required autofocus></label>
+      <label>
+        <br>
+        <input type="tel" name="phoneno"  pattern="[0-9]{10}"  title="Ten digits Number" placeholder="Mobile Number" required/>
+      </label>
+      <label>
+        <br>
+        <input type="password" name="password" placeholder="Password" required>
+      </label><br/><br/>
+      <input type="submit" class="submit" name="login" value="Log In">
+      <p class="forgot-pass">Forgot Password ?</p>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
