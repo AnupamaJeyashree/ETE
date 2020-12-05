@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ETE Upload and go live</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header class="fix">
+    <div class="nav-area">
+      <div class="logo" id="home"><img src="ETE.png"></div>
+      <ul class="menu">
+      <li><h1><b><a href="http://localhost/ete/tealogin/indexout.php?link=logout">Logout</a></b><h1></li>
+      </ul>
+    </div>
+  </header>
+  <div class="cont">
+    <div class="form sign-in">
+      <h2>Go live</h2>
+      <label>
+        <br><br>
+        <input type="text" name="text" placeholder="Name of content creator" required autofocus>
+      </label>
+      <label>
+        <br>
+        <input type="text" name="text" placeholder="Topic" required>
+      </label>
+<label>
+      <input type="submit" name="live" class="submit" value="Go live">
+</label>      
+
+      
+    </div>
+<form action="course_upload.php" method="post" enctype="multipart/form-data">
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h2>Upload content</h2>
+          <p>Click here to Upload content</p>
+        </div>
+        <div class="img-text m-in">
+          <h2>Go live</h2>
+          <p>click here to go live</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-up">Upload</span>
+          <span class="m-in">Go live</span>
+        </div>
+      </div>
+           <div class="form sign-up">
+        <h2>Upload Content</h2>
+        <label>
+          <br><br>
+          <input type="text" name="instructor_name" placeholder="Name of content creator" required autofocus>
+        </label>
+        <label>
+          <br>
+          <input type="text" name="name_of_course" placeholder="Title" required>
+        </label>
+        <label>
+          <br>
+          <input type="text" name="suitable_for_classes" placeholder="Suitable for classes" required>
+        </label>
+        <label>
+          <br>
+          <input type="file" name="filename" placeholder="Upload file" required>
+        </label><label>
+        <input type="submit" name="submit" class="submit" value="Submit"/></label>
+      </div>
+    </div>
+  </div>
+</form>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

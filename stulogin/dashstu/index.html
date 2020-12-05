@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Course</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="container">
+	<h1>MS Word</h1>
+	<div class="row">
+		<div class="col">
+			<div class="feature-img">
+				<img src="media/pic1.png" alt="">
+				<img src="media/play1.png" class="play-btn" onclick="playVideo('media/vid1.mp4')">
+			</div> 
+		</div>
+		
+      </div>
+<div class="video-player" id="videoPlayer">
+	<video width="100%" controls autoplay id="myVideo">
+		<source src="media/vid1.mp4" type="video/mp4">
+	</video>
+	<img src="media/close.png" class="close-btn" onclick="stopVideo()">
+</div>
+<script>
+	var videoPlayer=document.getElementById("videoPlayer");
+	var myVideo=document.getElementById("myVideo");	
+	function stopVideo(){
+		videoPlayer.style.display="none";		
+	}
+	function playVideo(file){
+		myVideo.src=file;
+		videoPlayer.style.display="block";
+	}
+</script>
+<div class="container">
+<form>
+<label for="subject"><h3>Queries</h3></label>
+    <textarea id="subject" name="subject" placeholder="Ask your queries.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
